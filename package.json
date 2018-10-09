@@ -1,0 +1,22 @@
+{
+  "name": "stringcalculator",
+  "version": "1.0.0",
+  "description": "String Calculator project for TDD assignment",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vingik1/StringCalculator.git"
+  },
+  "author": "Viktor Ingi Karason",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vingik1/StringCalculator/issues"
+  },
+  "homepage": "https://github.com/vingik1/StringCalculator#readme",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
