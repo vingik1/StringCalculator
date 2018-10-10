@@ -35,3 +35,7 @@ it("should return sum of all number below 1001", () =>{
 it("should return 2", () =>{
     expect(add("1001,2")).toBe(2);
 });
+
+it("should return sum of two numbers", () =>{
+    expect(add("//;\n2;7")).toBe(9);
+});

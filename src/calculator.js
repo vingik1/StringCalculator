@@ -2,8 +2,20 @@ function add(numbers){
     if(numbers == ""){
         return 0;
     }
-    if(numbers.includes(",") || numbers.includes("\n")){
-        var numbersArray = numbers.split(/,|\n/);
+    var delimiter = "";
+    if(numbers.includes("//")){
+        delimiter = numbers.charAt(2);
+        numbers = numbers.slice(4);
+    }
+    if(numbers.includes(",") || numbers.includes("\n") || numbers.includes(delimiter)){
+        var numbersArray;
+        if(delimiter != ""){
+            numbersArray = numbers.split(delimiter);
+        }
+        else{
+            numbersArray = numbers.split(/,|\n/);
+        }
+        
         var stringValue = findNegative(numbersArray);
         var haveNegative = checkNegative(numbersArray);
         if(haveNegative == true){
