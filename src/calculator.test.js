@@ -19,3 +19,7 @@ it("should return sum of multiple numbers", () =>{
 it("should return sum of multiple numbers", () =>{
     expect(add("1\n2,3")).toBe(6);
 });
+
+it("should return error message due to negative number", () =>{
+    expect(add("1\n2,-3")).toBe("Negatives not allowed: -3");
+});
