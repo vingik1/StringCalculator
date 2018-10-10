@@ -46,7 +46,9 @@ function findNegative(numbersArray){
 function sum(array){
     var sum = 0;
     for(var i = 0; i < array.length;i++) {
-        sum += parseInt(array[i]);
+        if(parseInt(array[i]) <= 1000){
+            sum += parseInt(array[i]);
+        }
     }
     return sum;
     
