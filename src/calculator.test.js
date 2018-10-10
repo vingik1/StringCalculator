@@ -15,3 +15,7 @@ it("should return sum of two given numbers", () =>{
 it("should return sum of multiple numbers", () =>{
     expect(add("5,5,20")).toBe(30);
 });
+
+it("should return sum of multiple numbers", () =>{
+    expect(add("1\n2,3")).toBe(6);
+});
